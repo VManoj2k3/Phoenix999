@@ -41,7 +41,7 @@
             width: 200px;
             height: 200px;
             margin-right: 10px;
-            border-radius:50%;
+            border-radius: 50%;
         }
 
         /* Main Styles */
@@ -59,6 +59,7 @@
         /* Navigation Styles */
         #nav {
             flex: 1;
+            text-align: left;
         }
 
         #nav ul {
@@ -66,11 +67,10 @@
             padding: 0;
             margin: 0;
             display: flex;
-            flex-direction: column;
-            /* Stack items in a column on smaller screens */
-            justify-content: center;
+            justify-content: flex-start; /* Align list items to the left */
             align-items: center;
         }
+
 
         #nav li {
             box-sizing: border-box;
@@ -227,11 +227,13 @@
 
             #nav ul {
                 flex-direction: row;
+                text-align: left;
                 /* Change back to row layout on larger screens */
             }
 
             #nav li {
                 margin-bottom: 0;
+                text-align:left;
                 /* Remove margin between items on larger screens */
             }
 
@@ -287,6 +289,29 @@
                 }
             }
         }
+        #image-button {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #be0d0d;
+            color: #fff;
+            padding: 20px 40px; /* Increase button padding for a larger, more prominent appearance */
+            font-size: 20px; /* Increase font size for better readability */
+            border: none;
+            border-radius: 8px; /* Round the corners for a softer look */
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+            z-index: 2;
+            display: inline-block; /* Ensure inline-block display to control width and centering */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            text-align: center;/* Add a subtle shadow for depth */
+        }
+
+        #image-button:hover {
+            background-color: #002f5a;
+        }
     </style>
 </head>
 
@@ -296,7 +321,6 @@
             <img id="small-logo" src="./images/PHOENIX 999.png" alt="Small Logo">
         </a>
         
-        <h1> Phoenix Mall</h1>
        
         <div id="nav">
             <ul>
@@ -310,6 +334,10 @@
     </header>
 
     <div id="main">
+        <div id="left-container">
+            <img id="bottom-image" src="./images/eagle.png" alt="Bottom Image">
+            <a href="https://www.phoenix88899.com/signup?invite=hjdef" id="image-button">Register</a>
+        </div>
         <div id="left-container">
             <img id="bottom-image" src="./images/phn.png" alt="Bottom Image">
         </div>

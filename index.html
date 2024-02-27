@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Mall</title>
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    <style>
-        /* General Styles */
-        h1{
+   <style>
+      h1 {
             font-family: Arial, Helvetica, sans-serif;
             font-style: oblique;
-            text-align:center;
+            text-align: center;
         }
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -70,7 +70,6 @@
             justify-content: flex-start; /* Align list items to the left */
             align-items: center;
         }
-
 
         #nav li {
             box-sizing: border-box;
@@ -145,6 +144,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            margin-bottom:20px;
         }
 
         #join-us-text {
@@ -221,24 +221,25 @@
         @media only screen and (max-width: 600px) {
             header h1 {
                 font-size: 24px;
-                text-align:center;
+                text-align: center;
                 /* Adjust the font size for smaller screens */
             }
 
             #nav ul {
-                flex-direction: row;
+                flex-direction: column;
                 text-align: left;
-                /* Change back to row layout on larger screens */
+                /* Change back to column layout on smaller screens */
             }
 
             #nav li {
                 margin-bottom: 0;
-                text-align:left;
-                /* Remove margin between items on larger screens */
+                text-align: left;
+                /* Remove margin between items on smaller screens */
             }
 
             #right-container {
                 padding: 10px;
+                margin-bottom:20px;
                 /* Adjust padding for better spacing on smaller screens */
             }
 
@@ -270,52 +271,51 @@
             #menu-icon {
                 font-size: 24px;
                 cursor: pointer;
+                display: inline-block;
+            }
+
+            #image-button {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #be0d0d;
+                color: #fff;
+                padding: 20px 40px; /* Increase button padding for a larger, more prominent appearance */
+                font-size: 20px; /* Increase font size for better readability */
+                border: none;
+                border-radius: 8px;
+                border: 2px solid black; /* Round the corners for a softer look */
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                text-decoration: none;
+                z-index: 2;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                text-shadow: 0vw;
+                text-align: center; /* Add a subtle shadow for depth */
+            }
+
+            #image-button:hover {
+                background-color: #002f5a;
+            }
+
+            #nav.show {
+                display: flex;
+            }
+
+            /* Additional styles for better user experience on small screens */
+            #nav {
+                transition: transform 0.3s ease-in-out;
+                transform: translateY(-100%);
                 display: none;
             }
 
-            @media only screen and (max-width: 600px) {
-                #nav.show {
-                    display: flex;
-                }
-
-                /* Additional styles for better user experience on small screens */
-                #nav {
-                    transition: transform 0.3s ease-in-out;
-                    transform: translateY(-100%);
-                }
-
-                #nav.show {
-                    transform: translateY(0);
-                }
+            #nav.show {
+                transform: translateY(0);
             }
         }
-        #image-button {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            font-size: larger;
-            transform: translate(-50%, -50%);
-            background-color: #be0d0d;
-            color: #fff;
-            padding: 20px 40px; /* Increase button padding for a larger, more prominent appearance */
-            font-size: 20px; /* Increase font size for better readability */
-            border: none;
-            border-radius: 8px;
-            border:2px solid black; /* Round the corners for a softer look */
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            text-decoration: none;
-            z-index: 2;
-            display: inline-block; /* Ensure inline-block display to control width and centering */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-            text-shadow: 0vw;
-            text-align: center;/* Add a subtle shadow for depth */
-        }
-
-        #image-button:hover {
-            background-color: #002f5a;
-        }
-    </style>
+   </style>
 </head>
 
 <body>
@@ -338,18 +338,16 @@
     </div>
 
     <div id="main">
-        <div id="left-contain">
-            <a href="https://www.phoenix88899.com/signup?invite=hjdef" id="image-button"><b>Register</b></a>
+        <div id="right-container">
+            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Embrace your entrepreneurial journey within <b>Phoenix Mall</b> and optimize your profitability with strategic approaches. Elevate your journey with
+                exclusive offers and more. Register now to start earning</p>
+            <a href="https://www.phoenix88899.com/signup?invite=hjdef" id="join-us-button"><b>Register</b></a>
         </div>
         <div id="left-container">
             <img id="bottom-image" src="./images/phn.png" alt="Bottom Image">
         </div>
 
-        <div id="right-container">
-            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Elevate your shopping journey with
-                exclusive offers and more.</p>
-            <a href="https://t.me/Gbeck999" id="join-us-button">Join Us</a>
-        </div>
+       
     </div>
 
     <div id="footer">

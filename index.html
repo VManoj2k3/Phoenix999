@@ -5,214 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Mall</title>
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    <style>
-       /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    overflow-x: hidden;
-}
+  <style>
+    
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+        overflow-x: hidden;
+    }
 
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    /* Header Styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-    flex: 1;
-}
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+        flex: 1;
+    }
 
-#small-logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
+    #small-logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
 
-/* Main Styles */
-#main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Navigation Styles */
-#nav {
-    flex: 1;
-}
-
-#nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#nav li {
-    box-sizing: border-box;
-    margin-right: 20px;
-    font-size: 20px;
-    position: relative;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#nav li:hover {
-    background-color: #004080;
-}
-
-#nav a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-/* Company Logo Styles */
-#company-logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-image: url("./images/PHOENIX 999.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Left Container Styles */
-#left-container {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
-}
-
-#bottom-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Right Container Styles */
-#right-container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #004080;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#join-us-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#join-us-button {
-    background-color: #004080;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#join-us-button:hover {
-    background-color: #002f5a;
-}
-
-/* Footer Styles */
-#footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Gaming Partners Container Styles */
-.gaming-partners-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gaming-partners-container img {
-    width: 100px; /* Adjust the width as needed */
-    height: 50px;
-    margin: 10px; /* Adjust the margin as needed */
-}
-
-/* Icon Styles */
-.icon {
-    display: inline-block;
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-image: url('./images/download.png');
-    margin-right: 10px;
-}
-
-/* Paragraph Styles */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
+    /* Main Styles */
     #main {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 20px auto; /* Add margin at the top and bottom for better spacing */
+    }
+
+    /* Navigation Styles */
+    #nav {
+        flex: 1;
+    }
+
+    #nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
     }
 
-    #left-container,
+    #nav li {
+        box-sizing: border-box;
+        margin-right: 20px;
+        font-size: 20px;
+        position: relative;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #nav li:hover {
+        background-color: #004080;
+    }
+
+    #nav a {
+        text-decoration: none;
+        color: #0066cc;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Company Logo Styles */
+    #company-logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url("./images/PHOENIX 999.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left Container Styles */
+    #left-container {
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+    }
+
+    #bottom-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Right Container Styles */
     #right-container {
         width: 100%;
-        max-width: none;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid #004080;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
-}
 
+    #join-us-text {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-    </style>
+    #join-us-button {
+        background-color: #004080;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #join-us-button:hover {
+        background-color: #002f5a;
+    }
+
+    /* Footer Styles */
+    #footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Gaming Partners Container Styles */
+    .gaming-partners-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gaming-partners-container img {
+        width: 100px; /* Adjust the width as needed */
+        height: 50px;
+        margin: 10px; /* Adjust the margin as needed */
+    }
+
+    /* Icon Styles */
+    .icon {
+        display: inline-block;
+        width: 20px; /* Adjust the width as needed */
+        height: 20px; /* Adjust the height as needed */
+        background-image: url('./images/download.png');
+        margin-right: 10px;
+    }
+
+    /* Paragraph Styles */
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+        #main {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #left-container,
+        #right-container {
+            width: 100%;
+            max-width: none;
+        }
+    }
+</style>
+
+  </style>
 </head>
 <body>
     <header>
-      
+        <a href="https://www.phoenix999.com">
+            <img id="small-logo" src="images/app_icon.png" alt="Small Logo">
+        </a>
+        <h1>Welcome to Phoenix Mall</h1>
         <div id="main">
           <div id="nav">
               <ul>
@@ -223,9 +227,6 @@ p {
                   <li><a href="help.html">Help</a></li>
               </ul>
           </div>
-             <a href="https://www.phoenix999.com">
-            <img id="small-logo" src="images/app_icon.png" alt="Small Logo">
-        </a>
   
     </header>
 

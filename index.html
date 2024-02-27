@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Mall</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            flex: 1;
+        }
+
+        #small-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #nav {
+            flex: 1;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #nav li {
+    box-sizing: border-box; /* Add this line */
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+        #nav li:hover {
+            background-color: #004080;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #company-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("./images/PHOENIX 999.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #left-container {
+            width: 50%;
+            max-width: 600px;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        #bottom-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #right-container {
+            width: 50%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #004080;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #join-us-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #join-us-button {
+            background-color: #004080;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #join-us-button:hover {
+            background-color: #002f5a;
+        }
+        #footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.gaming-partners-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gaming-partners-container img {
+    width: 100px; /* Adjust the width as needed */
+    height: 50px;
+    margin: 10px; /* Adjust the margin as needed */
+}
+.icon {
+            display: inline-block;
+            width: 20px; /* Adjust the width as needed */
+            height: 20px; /* Adjust the height as needed */
+            background-image: url('./images/download.png'); 
+            background-image: url('./images/download\ 2.png');/* Replace with the path to your icon image */
+            background-size: cover;
+            margin-right: 10px; 
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.phoenix999.com">
+            <img id="small-logo" src="images/app_icon.png" alt="Small Logo">
+        </a>
+        <h1>Welcome to Phoenix Mall</h1>
+    </header>
+
+    <div id="main">
+        <div id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+
+        <div id="company-logo"></div>
+    </div>
+
+    <div id="main">
+        <div id="left-container">
+            <img id="bottom-image" src="./images/phn.png" alt="Bottom Image">
+        </div>
+
+        <div id="right-container">
+            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Elevate your shopping journey with exclusive offers and more.</p>
+            <a href="https://t.me/Gbeck999" id="join-us-button">Join Us</a>
+        </div>
+    </div>
+   
+<div id="footer">
+    <div class="gaming-partners-container">
+       
+        <img src="./images/gp1.png" alt="Gaming Partner 1">
+        <img src="./images/gp2.png" alt="Gaming Partner 2 ">
+        <img src="./images/gp3.png" alt="Gaming Partner 3">
+        <img src="./images/gp4.png" alt="Gaming Partner 4">
+        <img src="./images/gp5.png" alt="Gaming Partner 5">
+        <img src="./images/gp6.png" alt="Gaming Partner 6">
+        <img src="./images/gp8.png" alt="Gaming Partner 7">
+        <img src="./images/gp9.png" alt="Gaming Partner 8 ">
+        <img src="./images/gp10.png" alt="Gaming Partner 10">
+        <img src="./images/gp11.png" alt="Gaming Partner 11">
+        <img src="./images/gp12.png" alt="Gaming Partner 12">
+        <img src="./images/gp14.png" alt="Gaming Partner 13">
+        <img src="./images/gp15.png" alt="Gaming Partner 15 ">
+        
+        
+    </div>
+    <div class="container">
+       <p> <span class="icon"></span>Attention! It is gambling advertising. Gambling is not suitable for solving financial problems. Please read terms and conditions and play responsibly.</p>
+    </div>
+    <div class="gaming-partners-container">
+        <img src="./images/van1.png" alt="Gaming Partner 1">
+        <img src="./images/van2.png" alt="Gaming Partner 2 ">
+        <img src="./images/van3.png" alt="Gaming Partner 3">
+        <img src="./images/van4.png" alt="Gaming Partner 4">
+
+    </div>
+</div>
+
+    
+</body>
+</html>

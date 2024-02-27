@@ -58,6 +58,19 @@
     flex: 1;
     overflow: auto; /* Add overflow property to enable scrolling on small screens if necessary */
 }
+      #nav li:hover {
+            background-color: #004080;
+        }
+        
+        #nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 18px;
+            /* Adjust font size for smaller screens */
+            margin: 0;
+            padding: 0;
+        }
 
 #nav ul {
     list-style: none;
@@ -70,16 +83,17 @@
 }
 
 #nav li {
-    box-sizing: border-box;
-    margin-right: 20px;
-    font-size: 20px;
-    position: relative;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    flex: 1; /* Make each item take up equal space to avoid overflow */
-}
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            /* Adjust spacing between items */
+            font-size: 18px;
+            /* Adjust font size for smaller screens */
+            position: relative;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
@@ -140,6 +154,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-bottom:20px;
     }
 
     #join-us-text {
@@ -221,23 +236,23 @@
 </head>
 <body>
     <header>
-        <a href="https://www.phoenix999.com">
+        <a href="https://www.phoenix88899.com/signup?invite=hjdef">
             <img id="small-logo" src="images/app_icon.png" alt="Small Logo">
         </a>
-        <h1>Phoenix Mall</h1>
+        <h1>Welcome to Phoenix Mall</h1>
        
-  
     </header>
-     <div id="main">
-          <div id="nav">
-              <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="service.html">Services</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="help.html">Help</a></li>
-              </ul>
-          </div>
+    <div id="main">
+      <div id="nav">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="help.html">Help</a></li>
+          </ul>
+      </div>
+
 
     
 
@@ -245,14 +260,16 @@
     </div>
 
     <div id="main">
+      
+      <div id="right-container">
+        <p id="join-us-text">Join us and experience the world of Phoenix Mall. Embrace your entrepreneurial journey within <b>Phoenix Mall</b> and optimize your profitability with strategic approaches. Elevate your journey with
+          exclusive offers and more. Register now to start earning.</p>
+        <a href="https://www.phoenix88899.com/signup?invite=hjdef" id="join-us-button"><b>REGISTER</b></a>
+    </div>
         <div id="left-container">
             <img id="bottom-image" src="./images/phn.png" alt="Bottom Image">
         </div>
 
-        <div id="right-container">
-            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Elevate your shopping journey with exclusive offers and more.</p>
-            <a href="https://t.me/Gbeck999" id="join-us-button">Join Us</a>
-        </div>
     </div>
    
 <div id="footer">

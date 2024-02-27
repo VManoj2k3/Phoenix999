@@ -194,18 +194,44 @@ p {
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media only screen and (max-width: 600px) {
-    #main {
+    .main-container {
         flex-direction: column;
         align-items: center;
     }
 
-    #left-container,
-    #right-container {
+    .left-container,
+    .right-container {
         width: 100%;
         max-width: none;
+        margin-right: 0;
+    }
+
+    .right-container {
+        padding: 10px; /* Adjust padding for better spacing on small screens */
+    }
+
+    #company-logo {
+        width: 100%; /* Make the company logo full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .bottom-image {
+        height: 100%; /* Make the bottom image fill the container on smaller screens */
+    }
+
+    .join-us-button {
+        width: 100%; /* Make the button full width on smaller screens */
+    }
+
+    .gaming-partners-container img {
+        width: 80px; /* Adjust the width of gaming partner images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px; /* Adjust margin for better spacing */
     }
 }
+
 
 
     </style>

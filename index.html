@@ -1,250 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Mall</title>
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <style>
-       /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    overflow-x: hidden;
-}
+        /* General Styles */
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+            text-align:center;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-    flex: 1;
-}
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            flex: 1;
+        }
 
-#small-logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
+        #small-logo {
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            border-radius:50%;
+        }
 
-/* Main Styles */
-#main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        /* Main Styles */
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* Navigation Styles */
-#nav {
-    flex: 1;
-}
+        /* Navigation Styles */
+        #nav {
+            flex: 1;
+        }
 
-#nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            /* Stack items in a column on smaller screens */
+            justify-content: center;
+            align-items: center;
+        }
 
-#nav li {
-    box-sizing: border-box;
-    margin-right: 20px;
-    font-size: 20px;
-    position: relative;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
+        #nav li {
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            /* Adjust spacing between items */
+            font-size: 18px;
+            /* Adjust font size for smaller screens */
+            position: relative;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-#nav li:hover {
-    background-color: #004080;
-}
+        #nav li:hover {
+            background-color: #004080;
+        }
 
-#nav a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
+        #nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 18px;
+            /* Adjust font size for smaller screens */
+            margin: 0;
+            padding: 0;
+        }
 
-/* Company Logo Styles */
-#company-logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-image: url("./images/PHOENIX 999.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        /* Company Logo Styles */
+        #company-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("./images/PHOENIX 999.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-/* Left Container Styles */
-#left-container {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
-}
+        /* Left Container Styles */
+        #left-container {
+            width: 100%;
+            max-width: 100%;
+            /* Full width on smaller screens */
+            height: auto;
+            /* Adjust height as needed */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            /* Add margin at the bottom for better spacing */
+        }
 
-#bottom-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        #bottom-image {
+            width: 100%;
+            height: auto;
+            /* Adjust height as needed */
+            object-fit: cover;
+        }
 
-/* Right Container Styles */
-#right-container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #004080;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Right Container Styles */
+        #right-container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #004080;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-#join-us-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+        #join-us-text {
+            font-size: 18px;
+            /* Adjust font size for smaller screens */
+            margin-bottom: 15px;
+            /* Adjust margin for better spacing */
+            text-align: center;
+        }
 
-#join-us-button {
-    background-color: #004080;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
+        #join-us-button {
+            background-color: #004080;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 16px;
+            /* Adjust font size for smaller screens */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-#join-us-button:hover {
-    background-color: #002f5a;
-}
+        #join-us-button:hover {
+            background-color: #002f5a;
+        }
 
-/* Footer Styles */
-#footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        /* Footer Styles */
+        #footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* Gaming Partners Container Styles */
-.gaming-partners-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        /* Gaming Partners Container Styles */
+        .gaming-partners-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.gaming-partners-container img {
-    width: 100px; /* Adjust the width as needed */
-    height: 50px;
-    margin: 10px; /* Adjust the margin as needed */
-}
+        .gaming-partners-container img {
+            width: 80px;
+            /* Adjust the width as needed for smaller screens */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin: 10px;
+            /* Adjust the margin for better spacing */
+        }
 
-/* Icon Styles */
-.icon {
-    display: inline-block;
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-image: url('./images/download.png');
-    margin-right: 10px;
-}
+        /* Icon Styles */
+        .icon {
+            display: inline-block;
+            width: 20px;
+            /* Adjust the width as needed for smaller screens */
+            height: 20px;
+            /* Adjust the height as needed for smaller screens */
+            background-image: url('./images/download.png');
+            margin-right: 10px;
+        }
 
-/* Paragraph Styles */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-}
+        /* Paragraph Styles */
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+            font-size: 16px;
+            /* Adjust font size for smaller screens */
+        }
 
-/* Responsive Styles */
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
-    .main-container {
-        flex-direction: column;
-        align-items: center;
-    }
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+                text-align:center;
+                /* Adjust the font size for smaller screens */
+            }
 
-    .left-container,
-    .right-container {
-        width: 100%;
-        max-width: none;
-        margin-right: 0;
-    }
+            #nav ul {
+                flex-direction: row;
+                /* Change back to row layout on larger screens */
+            }
 
-    .right-container {
-        padding: 10px; /* Adjust padding for better spacing on small screens */
-    }
+            #nav li {
+                margin-bottom: 0;
+                /* Remove margin between items on larger screens */
+            }
 
-    #company-logo {
-        width: 100%; /* Make the company logo full width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
-    }
+            #right-container {
+                padding: 10px;
+                /* Adjust padding for better spacing on smaller screens */
+            }
 
-    .bottom-image {
-        height: 100%; /* Make the bottom image fill the container on smaller screens */
-    }
+            #join-us-button {
+                width: 100%;
+                /* Make the button full width on smaller screens */
+            }
 
-    .join-us-button {
-        width: 100%; /* Make the button full width on smaller screens */
-    }
+            .gaming-partners-container img {
+                width: 60px;
+                /* Adjust the width of gaming partner images for smaller screens */
+                height: auto;
+                /* Maintain aspect ratio */
+                margin: 5px;
+                /* Adjust margin for better spacing */
+            }
 
-    .gaming-partners-container img {
-        width: 80px; /* Adjust the width of gaming partner images on smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        margin: 5px; /* Adjust margin for better spacing */
-    }
-}
+            #nav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background-color: #333;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+            }
 
+            #menu-icon {
+                font-size: 24px;
+                cursor: pointer;
+                display: none;
+            }
 
+            @media only screen and (max-width: 600px) {
+                #nav.show {
+                    display: flex;
+                }
 
+                /* Additional styles for better user experience on small screens */
+                #nav {
+                    transition: transform 0.3s ease-in-out;
+                    transform: translateY(-100%);
+                }
+
+                #nav.show {
+                    transform: translateY(0);
+                }
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <a href="https://www.phoenix999.com">
-            <img id="small-logo" src="images/app_icon.png" alt="Small Logo">
+            <img id="small-logo" src="./images/PHOENIX 999.png" alt="Small Logo">
         </a>
-        <h1>Welcome to Phoenix Mall</h1>
-    </header>
-
-    <div id="main">
+        
+        <h1> Phoenix Mall</h1>
+       
         <div id="nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -254,9 +307,7 @@ p {
                 <li><a href="help.html">Help</a></li>
             </ul>
         </div>
-
-        <div id="company-logo"></div>
-    </div>
+    </header>
 
     <div id="main">
         <div id="left-container">
@@ -264,42 +315,53 @@ p {
         </div>
 
         <div id="right-container">
-            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Elevate your shopping journey with exclusive offers and more.</p>
+            <p id="join-us-text">Join us and experience the world of Phoenix Mall. Elevate your shopping journey with
+                exclusive offers and more.</p>
             <a href="https://t.me/Gbeck999" id="join-us-button">Join Us</a>
         </div>
     </div>
-   
-<div id="footer">
-    <div class="gaming-partners-container">
-       
-        <img src="./images/gp1.png" alt="Gaming Partner 1">
-        <img src="./images/gp2.png" alt="Gaming Partner 2 ">
-        <img src="./images/gp3.png" alt="Gaming Partner 3">
-        <img src="./images/gp4.png" alt="Gaming Partner 4">
-        <img src="./images/gp5.png" alt="Gaming Partner 5">
-        <img src="./images/gp6.png" alt="Gaming Partner 6">
-        <img src="./images/gp8.png" alt="Gaming Partner 7">
-        <img src="./images/gp9.png" alt="Gaming Partner 8 ">
-        <img src="./images/gp10.png" alt="Gaming Partner 10">
-        <img src="./images/gp11.png" alt="Gaming Partner 11">
-        <img src="./images/gp12.png" alt="Gaming Partner 12">
-        <img src="./images/gp14.png" alt="Gaming Partner 13">
-        <img src="./images/gp15.png" alt="Gaming Partner 15 ">
-        
-        
-    </div>
-    <div class="container">
-       <p> <span class="icon"></span>Attention! It is gambling advertising. Gambling is not suitable for solving financial problems. Please read terms and conditions and play responsibly.</p>
-    </div>
-    <div class="gaming-partners-container">
-        <img src="./images/van1.png" alt="Gaming Partner 1">
-        <img src="./images/van2.png" alt="Gaming Partner 2 ">
-        <img src="./images/van3.png" alt="Gaming Partner 3">
-        <img src="./images/van4.png" alt="Gaming Partner 4">
 
-    </div>
-</div>
+    <div id="footer">
+        <div class="gaming-partners-container">
 
-    
+            <img src="./images/gp1.png" alt="Gaming Partner 1">
+            <img src="./images/gp2.png" alt="Gaming Partner 2 ">
+            <img src="./images/gp3.png" alt="Gaming Partner 3">
+            <img src="./images/gp4.png" alt="Gaming Partner 4">
+            <img src="./images/gp5.png" alt="Gaming Partner 5">
+            <img src="./images/gp6.png" alt="Gaming Partner 6">
+            <img src="./images/gp8.png" alt="Gaming Partner 7">
+            <img src="./images/gp9.png" alt="Gaming Partner 8 ">
+            <img src="./images/gp10.png" alt="Gaming Partner 10">
+            <img src="./images/gp11.png" alt="Gaming Partner 11">
+            <img src="./images/gp12.png" alt="Gaming Partner 12">
+            <img src="./images/gp14.png" alt="Gaming Partner 13">
+            <img src="./images/gp15.png" alt="Gaming Partner 15 ">
+
+
+        </div>
+        <div class="container">
+            <p> <span class="icon"></span>Attention! It is gambling advertising. Gambling is not suitable for
+                solving financial problems. Please read terms and conditions and play responsibly.</p>
+        </div>
+        <div class="gaming-partners-container">
+            <img src="./images/van1.png" alt="Gaming Partner 1">
+            <img src="./images/van2.png" alt="Gaming Partner 2 ">
+            <img src="./images/van3.png" alt="Gaming Partner 3">
+            <img src="./images/van4.png" alt="Gaming Partner 4">
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuIcon = document.getElementById('menu-icon');
+            var nav = document.getElementById('nav');
+
+            menuIcon.addEventListener('click', function () {
+                nav.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
+
 </html>

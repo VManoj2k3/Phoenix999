@@ -6,59 +6,67 @@
     <title>Services</title>
     <link rel="icon" href="./images/service.ico" type="image/x-icon">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+       body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-        header {
-            background-color: #0066cc;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+header {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-        #content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .service-section {
-            flex: 0 0 48%; /* Two sections in a row */
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
+.service-section {
+    flex: 0 0 48%; /* Two sections in a row */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
 
-        .service-section h2 {
-            color: #0066cc;
-            margin-bottom: 15px;
-        }
+.service-section h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
 
-        .service-section p {
-            margin-bottom: 10px;
-        }
+.service-section p {
+    margin-bottom: 10px;
+}
 
-        .service-section img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.service-section img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .service-section {
+        flex: 0 0 100%; /* One section in a row for smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>

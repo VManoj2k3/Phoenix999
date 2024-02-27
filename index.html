@@ -219,102 +219,92 @@
 
         /* Responsive Styles */
         @media only screen and (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-                text-align: center;
-                /* Adjust the font size for smaller screens */
-            }
-
-            #nav ul {
-                flex-direction: column;
-                text-align: left;
-                /* Change back to column layout on smaller screens */
-            }
-
-            #nav li {
-                margin-bottom: 0;
-                text-align: left;
-                /* Remove margin between items on smaller screens */
-            }
-
-            #right-container {
-                padding: 10px;
-                margin-bottom:20px;
-                /* Adjust padding for better spacing on smaller screens */
-            }
-
-            #join-us-button {
-                width: 100%;
-                /* Make the button full width on smaller screens */
-            }
-
-            .gaming-partners-container img {
-                width: 60px;
-                /* Adjust the width of gaming partner images for smaller screens */
-                height: auto;
-                /* Maintain aspect ratio */
-                margin: 5px;
-                /* Adjust margin for better spacing */
-            }
-
-            #nav {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                background-color: #333;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-            }
-
-            #menu-icon {
-                font-size: 24px;
-                cursor: pointer;
-                display: inline-block;
-            }
-
-            #image-button {
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: #be0d0d;
-                color: #fff;
-                padding: 20px 40px; /* Increase button padding for a larger, more prominent appearance */
-                font-size: 20px; /* Increase font size for better readability */
-                border: none;
-                border-radius: 8px;
-                border: 2px solid black; /* Round the corners for a softer look */
-                cursor: pointer;
-                transition: background-color 0.3s ease-in-out;
-                text-decoration: none;
-                z-index: 2;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                text-shadow: 0vw;
-                text-align: center; /* Add a subtle shadow for depth */
-            }
-
-            #image-button:hover {
-                background-color: #002f5a;
-            }
-
-            #nav.show {
-                display: flex;
-            }
-
-            /* Additional styles for better user experience on small screens */
-            #nav {
-                transition: transform 0.3s ease-in-out;
-                transform: translateY(-100%);
-                display: none;
-            }
-
-            #nav.show {
-                transform: translateY(0);
-            }
+        header h1 {
+            font-size: 24px;
+            text-align: center;
         }
+
+        #nav ul {
+            flex-direction: column; /* Change to column layout on smaller screens */
+            text-align: center; /* Center the text */
+        }
+
+        #nav li {
+            margin-bottom: 10px; /* Adjust spacing between items */
+            text-align: center; /* Center the text */
+        }
+
+        #right-container {
+            padding: 10px;
+            margin-bottom: 20px;
+            /* Adjust padding for better spacing on smaller screens */
+        }
+
+        #join-us-button {
+            width: 100%;
+            /* Make the button full width on smaller screens */
+        }
+
+        .gaming-partners-container img {
+            width: 60px;
+            /* Adjust the width of gaming partner images for smaller screens */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin: 5px;
+            /* Adjust margin for better spacing */
+        }
+
+        #nav {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+        }
+
+        #nav.show {
+            display: flex;
+        }
+
+        #menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #image-button {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #be0d0d;
+            color: #fff;
+            padding: 20px 40px; /* Increase button padding for a larger, more prominent appearance */
+            font-size: 20px; /* Increase font size for better readability */
+            border: none;
+            border-radius: 8px;
+            border: 2px solid black; /* Round the corners for a softer look */
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+            z-index: 2;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-shadow: 0vw;
+            text-align: center; /* Add a subtle shadow for depth */
+        }
+
+        #image-button:hover {
+            background-color: #002f5a;
+        }
+
+        #nav.show {
+            transform: translateY(0);
+        }
+    }
    </style>
 </head>
 
@@ -381,7 +371,16 @@
 
         </div>
     </div>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuIcon = document.getElementById('menu-icon');
+            var nav = document.getElementById('nav');
+
+            menuIcon.addEventListener('click', function () {
+                nav.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 
 </html>

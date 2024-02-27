@@ -53,42 +53,50 @@
     }
 
     /* Navigation Styles */
+   /* Navigation Styles */
+#nav {
+    flex: 1;
+    overflow: auto; /* Add overflow property to enable scrolling on small screens if necessary */
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+}
+
+#nav li {
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    flex: 1; /* Make each item take up equal space to avoid overflow */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
     #nav {
-        flex: 1;
+        overflow: hidden; /* Hide the overflow on smaller screens */
     }
 
     #nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
     }
 
     #nav li {
-        box-sizing: border-box;
-        margin-right: 20px;
-        font-size: 20px;
-        position: relative;
-        padding: 10px;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
+        margin-right: 0;
+        margin-bottom: 10px; /* Add margin at the bottom for better spacing */
     }
-
-    #nav li:hover {
-        background-color: #004080;
-    }
-
-    #nav a {
-        text-decoration: none;
-        color: #0066cc;
-        font-weight: bold;
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
-    }
+}
 
     /* Company Logo Styles */
     #company-logo {
